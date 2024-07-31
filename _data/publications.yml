@@ -1,7 +1,7 @@
 main:
 
   - title: "Towards Fixing Panic Bugs for Real-world Rust Programs"
-    authors: <strong>Yunbo Ni</strong>, Yang Feng, Zixi Liu, Runtao Chen
+    authors: <strong>Yunbo Ni</strong>, Yang Feng, Zixi Liu, Runtao Chen, Baowen Xu
     conference_short: Conference
     # conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
     # pdf: https://arxiv.org/pdf/2306.00988.pdf
