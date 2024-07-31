@@ -8,8 +8,9 @@ I am an undergraduate student of Software Engineering in Nanjing University. I a
 
 ## Research Interests
 
-- **Programming Language:** Rust
-- **Software Enginnering:** Automated Program Repair
+- **Programming Language**
+- **Software Enginnering**
+- **Compilers**
 
 <!-- ## News
 
