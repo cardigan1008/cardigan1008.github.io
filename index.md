@@ -21,3 +21,5 @@ I am an undergraduate student of Software Engineering in Nanjing University. I a
 {% include_relative _includes/publications.md %}
 
 <!-- {% include_relative _includes/services.md %} -->
+
+{% include_relative _includes/awards.md %}
