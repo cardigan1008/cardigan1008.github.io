@@ -12,7 +12,7 @@ main:
     notes: Under Review
 
   - title: "What Matters Besides Borrow Checking? Toward Understanding Bugs in the Rust Compiler"
-    authors: Zixi Liu, Yang Feng, <strong>Yunbo Ni<\strong>, Shaohua Li, Xizhe Yin, Qingkai Shi, Baowen Xu, Zhendong Su
+    authors: Zixi Liu, Yang Feng, <strong>Yunbo Ni</strong>, Shaohua Li, Xizhe Yin, Qingkai Shi, Baowen Xu, Zhendong Su
     conference_short: Journal
     # conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
     # pdf: https://arxiv.org/pdf/2002.10211.pdf
