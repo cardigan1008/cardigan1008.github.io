@@ -4,7 +4,7 @@ main:
     authors: <strong>Yunbo Ni</strong>, Yang Feng, Zixi Liu, Runtao Chen, Baowen Xu
     conference_short: Conference
     # conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    # pdf: https://arxiv.org/pdf/2306.00988.pdf
+    pdf: https://www.arxiv.org/pdf/2408.03262
     code: https://github.com/SSCT-Lab/PanicKiller
     page: https://sites.google.com/view/panickiller
     # bibtex: https://bib.yliu.me/MICCAI23.txt
