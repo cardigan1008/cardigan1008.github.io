@@ -15,11 +15,17 @@
             <section class="blog-posts">
                 {% for post in site.posts %}
                 <article class="post">
-                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                    <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+                    <div class="post-header">
+                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+                    </div>
                 </article>
                 {% endfor %}
             </section>
+            <footer>
+                <p>About • <a href="{{ '/rss.xml' | relative_url }}">RSS</a> • <a href="{{ site.github_link }}">Source on GitHub</a></p>
+                <p>Built with <a href="https://jekyllrb.com/">Jekyll</a>. Maintained with ❤️ for the web.</p>
+            </footer>
         </main>
     </div>
 </body>
