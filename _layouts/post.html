@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>cardigan1008's blog</h1>
+        </header>
+
+        <!-- Post Content -->
+        <section class="blog-post">
+            <article class="post">
+                <h1>{{ page.title }}</h1>
+                <p class="post-meta">Posted on {{ page.date | date: "%B %d, %Y" }}</p>
+                <div class="post-content">
+                    {{ content }}
+                </div>
+            </article>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p><a href="{{ '/' | relative_url }}">About me</a></p>
+            <p>Built with <a href="https://jekyllrb.com/">Jekyll</a>. Maintained with ❤️ for the blog.</p>
+        </footer>
+    </div>
+</body>
+</html>
