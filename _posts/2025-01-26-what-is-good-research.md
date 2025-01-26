@@ -8,6 +8,8 @@ tags: [research]
 
 This is a long-term post. It will be updated over time as I learn more about what makes research good.
 
+<!--more-->
+
 I’ve been working on research for over a year now and have faced six rejections from various conferences and journals. 
 
 This isn’t uncommon in my field, but for some of my AI fellows, it feels like a disaster. After all, going a whole year without a single publication sounds like a nightmare. I felt the same way at first—waiting for reviews made me anxious for months. And when the rejections started rolling in, they really got to me. 
