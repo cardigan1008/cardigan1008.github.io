@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-  </head>
-  <body>
-    <main class="blog-content">
-      {{ content }}
-    </main>
-  </body>
+    <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>{{ site.title }}</h2>
+            <nav>
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                    <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+                    <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+                    <li><a href="{{ '/rss-feed/' | relative_url }}">RSS Feed</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <h1>{{ page.title }}</h1>
+            <section class="blog-posts">
+                {% for post in site.posts %}
+                <article class="post">
+                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    <p class="post-meta">{{ post.date | date: "%B %d, %Y" }} • {{ post.categories | join: ", " }}</p>
+                    <p>{{ post.excerpt }}</p>
+                    <p><a href="{{ post.url }}">Read more...</a></p>
+                </article>
+                {% endfor %}
+            </section>
+        </main>
+    </div>
+</body>
 </html>

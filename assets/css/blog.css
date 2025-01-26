@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    flex: 0 0 200px;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #007acc;
+    font-size: 1rem;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.blog-posts .post {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.blog-posts .post h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-posts .post h2 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-posts .post h2 a:hover {
+    color: #007acc;
+}
+
+.blog-posts .post-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.blog-posts .post p {
+    font-size: 1rem;
+    color: #555;
+}
