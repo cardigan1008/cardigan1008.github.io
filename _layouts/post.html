@@ -1,29 +1,21 @@
----
-layout: default
----
-
-<article class="post">
-  <header>
-    <h1>{{ page.title }}</h1>
-    <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
-    {% if page.categories %}
-    <p class="post-categories">
-      Categories: 
-      {% for category in page.categories %}
-        <a href="/{{ category }}/">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
-      {% endfor %}
-    </p>
-    {% endif %}
-  </header>
-  <div class="post-content">
-    {{ content }}
-  </div>
-  <footer>
-    <p>
-      Tags: 
-      {% for tag in page.tags %}
-        <a href="/tags/{{ tag }}/">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}
-      {% endfor %}
-    </p>
-  </footer>
-</article>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.date | date: "%B %d, %Y" }}</p>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>© {{ site.time | date: '%Y' }}</p>
+    </footer>
+</body>
+</html>

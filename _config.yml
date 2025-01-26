@@ -58,6 +58,10 @@ exclude:
 
 permalink: /:categories/:year/:month/:day/:title/
 
+collections:
+  posts:
+    output: true
+
 defaults:
   - scope:
       path: "_posts"
