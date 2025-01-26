@@ -15,6 +15,7 @@ canonical: https://minimal-light-theme.yliu.me/
 google_scholar: https://scholar.google.com/citations?user=U3WTY6UAAAAJ
 cv_link: assets/files/CV_YunboNi.pdf
 github_link: https://github.com/cardigan1008
+blog_link: https://cardigan1008.fun/
 # linkedin: https://www.linkedin.com/
 # twitter: https://twitter.com/
 
@@ -55,15 +56,3 @@ exclude:
   - LICENSE
   - minimal-light.gemspec
   - html_source_file/
-
-permalink: /:categories/:year/:month/:day/:title/
-
-collections:
-  posts:
-    output: true
-
-defaults:
-  - scope:
-      path: "_posts"
-    values:
-      layout: post

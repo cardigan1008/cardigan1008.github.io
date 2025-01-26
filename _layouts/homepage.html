@@ -59,11 +59,11 @@
 
         <br>
         <br>
-        <nav>
-          <ul style="list-style-type:none; padding: 0; display: flex; gap: 15px; justify-content: center;">
-            <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-          </ul>
-        </nav>
+        {% if site.blog_link %}
+        <a style="margin: 0 10px;" href="{{ '/blog/' | relative_url }}">
+          <i class="fab fa-blog" style="font-size:1.2rem;"></i> Blog
+        </a>
+        {% endif %}
         <div class="social-icons">
         {% if site.google_scholar %}
         <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
