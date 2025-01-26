@@ -4,11 +4,15 @@ title: "Blog"
 permalink: /blog/
 ---
 
-<ul>
+<h1>Latest Blog Posts</h1>
+<p>Welcome to my blog! Here are my latest articles:</p>
+
+<ul class="blog-posts">
   {% if site.posts.size > 0 %}
     {% for post in site.posts %}
     <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <small>Published on {{ post.date | date: "%B %d, %Y" }}</small>
     </li>
     {% endfor %}
   {% else %}
