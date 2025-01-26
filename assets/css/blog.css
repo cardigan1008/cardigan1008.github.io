@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -15,23 +15,21 @@ body {
 header h1 {
     font-size: 1.5rem;
     color: #007acc;
+    text-align: center;
     margin-bottom: 30px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    font-weight: normal;
 }
 
 .blog-posts .post {
     margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
+    text-align: center;
 }
 
 .blog-posts .post h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #007acc;
     margin: 0 0 10px 0;
-    font-weight: normal;
 }
 
 .blog-posts .post h2 a {
@@ -60,22 +58,11 @@ header h1 {
     margin: 10px 0;
 }
 
-.blog-posts .post .read-more {
-    font-size: 0.9rem;
-    color: #007acc;
-    text-decoration: none;
-}
-
-.blog-posts .post .read-more:hover {
-    text-decoration: underline;
-}
-
 footer {
     margin-top: 40px;
     font-size: 0.8rem;
     color: #666;
     text-align: left;
-    line-height: 1.4;
 }
 
 footer a {
