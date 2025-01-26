@@ -4,10 +4,13 @@ position: Junior Student
 affiliation: Nanjing University
 email: yunboni (at) smail.nju.edu.cn
 
+url: https://cardigan1008.github.io
+baseurl: /blog
+
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: Yunbo Ni
-description: Junior student at Nanjin University
+description: Senior student at Nanjin University
 canonical: https://minimal-light-theme.yliu.me/
 
 # Links 
