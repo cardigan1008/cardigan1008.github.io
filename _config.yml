@@ -59,4 +59,6 @@ exclude:
   - minimal-light.gemspec
   - html_source_file/
 
+# blog
 future: true
+excerpt_separator: <!--more-->
