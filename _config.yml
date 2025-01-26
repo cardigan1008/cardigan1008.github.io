@@ -57,12 +57,4 @@ exclude:
   - minimal-light.gemspec
   - html_source_file/
 
-collections:
-  posts:
-    output: true
-
-defaults:
-  - scope:
-      path: "_posts"
-    values:
-      layout: post
+future: true
