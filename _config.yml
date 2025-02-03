@@ -65,6 +65,4 @@ excerpt_separator: <!--more-->
 
 kramdown:
   syntax_highlighter: coderay
-  syntax_highlighter_opts:
-    line_numbers: table
-    bold_every: 5
+
