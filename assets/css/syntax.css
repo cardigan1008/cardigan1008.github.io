@@ -7,11 +7,15 @@
   vertical-align: top;
 }
 .highlight .gutter {
-  color: #888; 
+  color: #888;
   text-align: right;
   font-size: 12px;
-  padding-right: 10px;
+  padding-right: 8px;
+  width: 2em;
   user-select: none;
+}
+.highlight .code {
+  padding-left: 8px;
 }
 .highlight pre {
   margin: 0;
@@ -22,9 +26,10 @@ pre.highlight {
   white-space: pre-wrap !important;
   word-wrap: break-word !important;
   overflow-x: auto;
-  padding-left: 3em;
+  padding-left: 2.5em;
   position: relative;
 }
+
 .highlight, .highlight .w {
   color: #24292f;
   background-color: #f6f8fa;
