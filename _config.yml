@@ -62,5 +62,3 @@ exclude:
 # blog
 future: true
 excerpt_separator: <!--more-->
-
-markdown: CommonMarkGhPages
