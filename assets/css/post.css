@@ -11,6 +11,9 @@ a:visited {
     color: #007acc;
 }
 
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #ffffff;

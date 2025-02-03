@@ -24,7 +24,7 @@
                 <h1>{{ page.title }}</h1>
                 <p class="post-meta">Posted on {{ page.date | date: "%B %d, %Y" }}</p>
                 <div id="markdown-content" style="display: none;">
-                    {{ content | strip_html | escape }}
+                    {{ content }}
                 </div>
                 <div class="post-content"></div>
             </article>
@@ -44,8 +44,9 @@
                 linkify: true,
                 breaks: true
             });
-
+    
             var rawMarkdown = document.getElementById("markdown-content").textContent;
+    
             document.querySelector(".post-content").innerHTML = md.render(rawMarkdown);
         });
     </script>
