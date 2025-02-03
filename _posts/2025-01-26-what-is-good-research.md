@@ -18,17 +18,21 @@ When I looked back, I realized that my anxiety could, in part, be attributed to 
 
 Here are some points I believe make for good research:
 
-- Practical: Research that can be applied in real-world production.
-- Theoretical innovation: Not just a trivial improvement in a narrow area.
-- Depth: Digging deep into a problem and making meaningful progress.
+- **Practical**: Research that can be applied in real-world production.
+- **Theoretical innovation**: Not just a trivial improvement in a narrow area.
+- **Depth**: Digging deep into a problem and making meaningful progress.
 
 I’m both ashamed and honest enough to admit that one of my earlier projects didn’t meet these standards. But I’m grateful for the experience because it helped me understand what constitutes good research. 
 
 Here are some examples that I believe meet those standards:
 
-- RUDRA: Finding Memory Safety Bugs in Rust at the Ecosystem Scale
-- Boosting Compiler Testing by Injecting Real-World Code
-- Accelerating Fuzzing through Prefix-guided Execution
+- RUDRA: Finding Memory Safety Bugs in Rust at the Ecosystem Scale [^1]
+- Boosting Compiler Testing by Injecting Real-World Code [^2]
+- Accelerating Fuzzing through Prefix-guided Execution [^3]
 - ...
+
+[^1]: [RUDRA: Finding Memory Safety Bugs in Rust at the Ecosystem Scale](https://dl.acm.org/doi/10.1145/3477132.3483570)
+[^2]: [Boosting Compiler Testing by Injecting Real-World Code](https://dl.acm.org/doi/10.1145/3656386)
+[^3]: [Accelerating Fuzzing through Prefix-guided Execution](https://dl.acm.org/doi/10.1145/3586027)
 
 I thoroughly enjoy reading these papers. They have inspired me not only in how to write a paper but also in how to create a great project. For someone like me, who plans to continue researching in SE/PL for a long time, coding is just as important as writing. Reaching that level is a long-term goal I aspire to achieve. 
