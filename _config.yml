@@ -61,3 +61,4 @@ exclude:
 
 # blog
 future: true
+markdown: none
