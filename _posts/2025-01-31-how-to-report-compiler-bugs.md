@@ -12,7 +12,7 @@ Recently, I've been reporting bugs to GCC and LLVM, and I’d like to share some
 
 I've been working on a compiler testing project since August 2024.
 Since our fuzzer generates thousands of lines of code, understanding the root cause of a bug can be challenging. 
-Thus, **reduction** is an essential step. 
+Thus, reduction is an essential step. 
 
 Initially, my instructor recommended [CReduce](https://github.com/csmith-project/creduce), an impressive tool that not only minimizes C code but also supports other languages like Rust. 
 
@@ -37,7 +37,7 @@ grep -q 'internal compiler error' output.txt
 exit $?
 ```
 
-This script is designed for reducing crash cases when compiled with GCC. It works by checking whether the compiler’s output contains a specific marker indicating an **internal compiler error (ICE)**.
+This script is designed for reducing crash cases when compiled with GCC. It works by checking whether the compiler’s output contains a specific marker indicating an internal compiler error (ICE).
 
 # Miscompilation: More Complex
 
@@ -153,9 +153,9 @@ Then, in your reduction script, replace `$CASE` with `simple.c`. Done!
 
 Before writing a bug report, it's important to ensure that your case is valid and not a duplicate. Here are a few key checks to perform beforehand:
 
-- Check Compiler Warnings: Compile it with `-Wall -Wextra` or `-fno-strict-aliasing -fwrapv` to see if there's anything different. 
+- **Check Compiler Warnings**: Compile it with `-Wall -Wextra` or `-fno-strict-aliasing -fwrapv` to see if there's anything different. 
 
-- Search for Duplicate Reports: Use relevant keywords to search existing bug reports. For example, searching crash info for crash cases.  
+- **Search for Duplicate Reports**: Use relevant keywords to search existing bug reports. For example, searching crash info for crash cases.  
 
 # Gracefully Report Bugs
 
@@ -163,14 +163,14 @@ Reporting bugs isn’t just about dumping everything onto maintainers—it’s a
 
 Here are some of my tips for reporting bugs effectively:
 
-- A Simple, Informative Title: For crash, I use the format: `Crash at [opt-level]: [info]`. For example, one of my Clang crash reports was titled: \`Crash at -O2: Assertion \`isAvailableAtLoopEntry(LHS, L) && "LHS is not available at Loop Entry"' failed.\`
+- **A Simple, Informative Title**: For crash, I use the format: `Crash at [opt-level]: [info]`. For example, one of my Clang crash reports was titled: \`Crash at -O2: Assertion \`isAvailableAtLoopEntry(LHS, L) && "LHS is not available at Loop Entry"' failed.\`
 For miscompilation bugs, I follow the format:  `Miscompilation at [opt-level]`. 
 
-- A Reproducible Test Case: I always provide a minimal reduced test case that triggers the bug. Also, I attach a [Compiler Explorer](https://godbolt.org/) link. 
+- **A Reproducible Test Case**: I always provide a minimal reduced test case that triggers the bug. Also, I attach a [Compiler Explorer](https://godbolt.org/) link. 
 
-- Bisection Information: If possible, I include the bisected commit ID to pinpoint when the issue was introduced. Otherwise, I provide a version range where the bug is observed. 
+- **Bisection Information**: If possible, I include the bisected commit ID to pinpoint when the issue was introduced. Otherwise, I provide a version range where the bug is observed. 
 
-- Essential Diagnostic Info: For crash, crash info and backtrace are required. 
+- **Essential Diagnostic Info**: For crash, crash info and backtrace are required. 
 
 ---
 
