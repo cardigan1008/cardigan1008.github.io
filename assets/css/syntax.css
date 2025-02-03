@@ -10,7 +10,8 @@
   color: #888;
   text-align: right;
   font-size: 12px;
-  padding-right: 8px;
+  padding-right: 4px;
+  padding-left: 2px;
   width: 2em;
   user-select: none;
 }
