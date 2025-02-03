@@ -6,7 +6,7 @@
     <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="/assets/css/post.css">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-light.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
@@ -39,19 +39,19 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var md = window.markdownit({
-                html: true,
-                linkify: true,
-                breaks: true
-            });
-
-            var rawMarkdown = document.getElementById("markdown-content").innerHTML;
-            document.querySelector(".post-content").innerHTML = md.render(rawMarkdown);
-
-            document.querySelectorAll("pre code").forEach((block) => {
-                hljs.highlightElement(block);
-            });
+        var md = window.markdownit({
+            html: true,
+            linkify: true,
+            langPrefix: 'language-'
         });
+
+        var rawMarkdown = document.getElementById("markdown-content").innerHTML;
+        document.querySelector(".post-content").innerHTML = md.render(rawMarkdown);
+
+        document.querySelectorAll("pre code").forEach((block) => {
+            hljs.highlightElement(block);
+        });
+    });
     </script>
 </body>
 </html>
