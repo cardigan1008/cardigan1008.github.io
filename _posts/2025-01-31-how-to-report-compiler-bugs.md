@@ -8,6 +8,8 @@ tags: [research, testing]
 
 Recently, I've been reporting bugs to GCC and LLVM, and I’d like to share some of my thoughts on the process. 
 
+<!--more-->
+
 I've been working on a compiler testing project since August 2024.
 Since our fuzzer generates thousands of lines of code, understanding the root cause of a bug can be challenging. 
 Thus, **reduction** is an essential step. 

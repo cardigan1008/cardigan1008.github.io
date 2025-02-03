@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="/assets/css/post.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-light.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -23,10 +18,9 @@
             <article class="post">
                 <h1>{{ page.title }}</h1>
                 <p class="post-meta">Posted on {{ page.date | date: "%B %d, %Y" }}</p>
-                <div id="markdown-content" style="display: none;">
+                <div class="post-content">
                     {{ content }}
                 </div>
-                <div class="post-content"></div>
             </article>
         </section>
 
@@ -36,19 +30,5 @@
             <p>Built with <a href="https://jekyllrb.com/">Jekyll</a>. Maintained with ❤️ for the blog.</p>
         </footer>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var md = window.markdownit({
-                html: true,
-                linkify: true,
-                breaks: true
-            });
-    
-            var rawMarkdown = document.getElementById("markdown-content").textContent;
-    
-            document.querySelector(".post-content").innerHTML = md.render(rawMarkdown);
-        });
-    </script>
 </body>
 </html>

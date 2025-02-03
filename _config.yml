@@ -61,4 +61,4 @@ exclude:
 
 # blog
 future: true
-markdown: none
+excerpt_separator: <!--more-->
