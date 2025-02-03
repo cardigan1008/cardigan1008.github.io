@@ -107,7 +107,7 @@ diff O0.txt O1.txt && ! diff O0.txt O3.txt > /dev/null 2>&1
 This script is designed for detecting miscompilation at the `-O3` level in Clang.
 We add an additional opt level for comparsion and use sanitizer to avoid UB. 
 
-## Perfect? No!
+*Perfect? No!*
 
 You might have noticed that I enabled MemorySanitizer (MSAN) in the script. However, there's a catch—MSAN also detects memory leaks, which are not a form of UB. 
 
@@ -131,7 +131,7 @@ clang -O0 $CASE -fsanitize=address,undefined -fno-sanitize-recover=all -o san.ou
 
 This ensures that only actual UB-related issues are detected, without unnecessary noise from memory leak reports.
 
-## One More Takeaway
+*One More Takeaway*
 
 If the original test case includes external libraries, your reduced case might end up looking like this:
 
