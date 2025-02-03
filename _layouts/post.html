@@ -24,7 +24,7 @@
                 <h1>{{ page.title }}</h1>
                 <p class="post-meta">Posted on {{ page.date | date: "%B %d, %Y" }}</p>
                 <div id="markdown-content" style="display: none;">
-                    {{ content }}
+                    {{ content | strip_html | escape }}
                 </div>
                 <div class="post-content"></div>
             </article>
@@ -39,19 +39,15 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-        var md = window.markdownit({
-            html: true,
-            linkify: true,
-            langPrefix: 'language-'
-        });
+            var md = window.markdownit({
+                html: true,
+                linkify: true,
+                breaks: true
+            });
 
-        var rawMarkdown = document.getElementById("markdown-content").innerHTML;
-        document.querySelector(".post-content").innerHTML = md.render(rawMarkdown);
-
-        document.querySelectorAll("pre code").forEach((block) => {
-            hljs.highlightElement(block);
+            var rawMarkdown = document.getElementById("markdown-content").textContent;
+            document.querySelector(".post-content").innerHTML = md.render(rawMarkdown);
         });
-    });
     </script>
 </body>
 </html>
