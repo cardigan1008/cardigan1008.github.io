@@ -26,7 +26,7 @@ pre.highlight {
   white-space: pre-wrap !important;
   word-wrap: break-word !important;
   overflow-x: auto;
-  padding-left: 2em;
+  padding-left: 0.5em;
   position: relative;
 }
 
