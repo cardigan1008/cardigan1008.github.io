@@ -7,7 +7,7 @@
   vertical-align: top;
 }
 .highlight .code {
-  padding-left: 0.5em;
+  padding-left: 0.8em;
 }
 .highlight pre {
   margin: 0;
@@ -18,7 +18,7 @@ pre.highlight {
   white-space: pre-wrap !important;
   word-wrap: break-word !important;
   overflow-x: auto;
-  padding-left: 0.5em;
+  padding-left: 0.8em;
   position: relative;
 }
 
