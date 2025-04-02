@@ -2,7 +2,7 @@ main:
 
   - title: "Towards Fixing Panic Bugs for Real-world Rust Programs"
     authors: <strong>Yunbo Ni</strong>, Yang Feng, Zixi Liu, Runtao Chen, Baowen Xu
-    conference_short: Conference
+    conference_short: Journal
     # conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
     # pdf: https://www.arxiv.org/pdf/2408.03262
     # code: https://github.com/SSCT-Lab/PanicKiller
@@ -13,7 +13,7 @@ main:
 
   - title: "What Matters Besides Borrow Checking? Toward Understanding Bugs in the Rust Compiler"
     authors: Zixi Liu, Yang Feng, <strong>Yunbo Ni</strong>, Shaohua Li, Xizhe Yin, Qingkai Shi, Baowen Xu, Zhendong Su
-    conference_short: Journal
+    conference_short: Conference
     # conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
     # pdf: https://arxiv.org/pdf/2002.10211.pdf
     # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
