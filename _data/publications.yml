@@ -4,7 +4,7 @@ main:
     conference_short: Conference
     # conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
     # pdf: https://www.arxiv.org/pdf/2408.03262
-    # code: https://github.com/SSCT-Lab/PanicKiller
+    code: https://github.com/cardigan1008/LegoFuzz
     # page: https://sites.google.com/view/panickiller
     # bibtex: https://bib.yliu.me/MICCAI23.txt
     # image: ./assets/img/panickiller.png
