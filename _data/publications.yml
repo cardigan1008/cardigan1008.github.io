@@ -1,4 +1,14 @@
 main:
+  - title: "Interleaving Large Language Models for Compiler Testing"
+  authors: <strong>Yunbo Ni</strong>, Shaohua Li
+  conference_short: Conference
+  # conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
+  # pdf: https://www.arxiv.org/pdf/2408.03262
+  # code: https://github.com/SSCT-Lab/PanicKiller
+  # page: https://sites.google.com/view/panickiller
+  # bibtex: https://bib.yliu.me/MICCAI23.txt
+  # image: ./assets/img/panickiller.png
+  notes: Under Review
 
   - title: "Towards Fixing Panic Bugs for Real-world Rust Programs"
     authors: <strong>Yunbo Ni</strong>, Yang Feng, Zixi Liu, Runtao Chen, Baowen Xu
@@ -8,10 +18,10 @@ main:
     # code: https://github.com/SSCT-Lab/PanicKiller
     # page: https://sites.google.com/view/panickiller
     # bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/panickiller.png
+    # image: ./assets/img/panickiller.png
     notes: Under Review
 
-  - title: "What Matters Besides Borrow Checking? Toward Understanding Bugs in the Rust Compiler"
+  - title: "An Empirical Study of Rust-Specific Bugs in the rustc Compiler"
     authors: Zixi Liu, Yang Feng, <strong>Yunbo Ni</strong>, Shaohua Li, Xizhe Yin, Qingkai Shi, Baowen Xu, Zhendong Su
     conference_short: Conference
     # conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
@@ -20,4 +30,4 @@ main:
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     notes: Under Review
-    image: ./assets/img/rust_study.png
+    # image: ./assets/img/rust_study.png
