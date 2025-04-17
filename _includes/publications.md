@@ -1,31 +1,26 @@
-<h2 id="publications" style="margin: 2px 0px 10px;">Publications</h2>
+<h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
 
 <div class="publications">
 <ol class="bibliography">
 
 {% for link in site.data.publications.main %}
 
-<li style="margin-bottom: 1rem;">
-  <div class="pub-row" style="padding-left: 5px;">
-
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <!-- {% if link.image %} 
+    <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+    {% endif %} -->
     {% if link.conference_short %} 
     <abbr class="badge">{{ link.conference_short }}</abbr>
     {% endif %}
-
-    <div class="title" style="margin-top: 0.4rem;">
-      {% if link.pdf %}
-      <a href="{{ link.pdf }}">{{ link.title }}</a>
-      {% else %}
-      {{ link.title }}
-      {% endif %}
-    </div>
-
-    <div class="author" style="margin-top: 0.2rem;">{{ link.authors }}</div>
-
-    <div class="periodical" style="margin-top: 0.2rem;"><em>{{ link.conference }}</em></div>
-
-    {% if link.pdf or link.code or link.page or link.bibtex or link.notes or link.others %}
-    <div class="links" style="margin-top: 0.3rem;">
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
+      <div class="author">{{ link.authors }}</div>
+      <div class="periodical"><em>{{ link.conference }}</em>
+      </div>
+    <div class="links">
       {% if link.pdf %} 
       <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       {% endif %}
@@ -39,22 +34,20 @@
       <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
       {% endif %}
       {% if link.notes %} 
-      <strong><i style="color:#e74d3c">{{ link.notes }}</i></strong>
+      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
       {% endif %}
       {% if link.others %} 
       {{ link.others }}
       {% endif %}
     </div>
-    {% endif %}
-
   </div>
+</div>
 </li>
 
-{% unless forloop.last %}
-<hr style="margin: 0.6rem 0; border: none; border-top: 1px solid #eee;">
-{% endunless %}
+<br>
 
 {% endfor %}
 
 </ol>
 </div>
+
