@@ -10,7 +10,7 @@ Notes on paper related to LLM4Testing.
 
 <!--more-->
 
-# [Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation](https://dl.acm.org/doi/pdf/10.1145/3691620.3695513)
+# [1. Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation](https://dl.acm.org/doi/pdf/10.1145/3691620.3695513)
 
 ## Problems with constraint-based fuzzing:
 
