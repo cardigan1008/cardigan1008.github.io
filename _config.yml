@@ -68,9 +68,5 @@ excerpt_separator: <!--more-->
 #   syntax_highlighter_opts:
 #     block:
 #       wrap: true
-markdown: CommonMark
-commonmark:
-  extensions:
-    - strikethrough
-    - autolink
-
+markdown: GFM
+font: "Serif"
