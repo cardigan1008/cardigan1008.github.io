@@ -63,10 +63,8 @@ exclude:
 future: true
 excerpt_separator: <!--more-->
 
-# kramdown:
-#   syntax_highlighter: rouge
-#   syntax_highlighter_opts:
-#     block:
-#       wrap: true
-markdown: GFM
-font: "Serif"
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      wrap: true
