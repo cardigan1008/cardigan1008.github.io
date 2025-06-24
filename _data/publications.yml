@@ -8,7 +8,7 @@ main:
     # page: https://sites.google.com/view/panickiller
     # bibtex: https://bib.yliu.me/MICCAI23.txt
     # image: ./assets/img/panickiller.png
-    notes: Under Review
+    notes: OOPSLA 2025 (to appear)
 
   - title: "Towards Fixing Panic Bugs for Real-world Rust Programs"
     authors: <strong>Yunbo Ni</strong>, Yang Feng, Zixi Liu, Runtao Chen, Baowen Xu
