@@ -10,7 +10,7 @@ Notes on paper related to LLM4Testing.
 
 <!--more-->
 
-# [1. Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation](https://dl.acm.org/doi/pdf/10.1145/3691620.3695513)
+# [Towards Understanding the Effectiveness of Large Language Models on Directed Test Input Generation](https://dl.acm.org/doi/pdf/10.1145/3691620.3695513)
 
 ## Problems with constraint-based fuzzing:
 
@@ -71,3 +71,12 @@ But the number of examples is small, which makes it questionable on the findings
 
 - Finding 9 (STRONGLY AGREE): It is feasible and promising to integrate LLMs with constraint-based tools and the evaluation results show that our novel solution can yield significant improvements. We believe this is a promising direction worthy of further exploration. 
 
+# [Testing Database Systems with Large Language Model Synthesized Fragments](https://www.arxiv.org/pdf/2505.02012)
+
+Problem: Current DBMS test approaches are base on manually written written SQL generators, which support limited SQL features. 
+
+Challenge: 
+
+- For traditional methods: 1000+ DBMSs exist, whose dialects differ in both syntax and semantics. It's hard for current tools to cover all the features. 
+
+- For LLM-based methods: First, the throughput of LLM-based generation is much lower. Second, the cost of using LLMs is high. Third, current LLMs suffer from hallucination. 
