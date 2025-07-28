@@ -34,7 +34,7 @@ def get_personal_data():
             <div class="col-sm-12" style="">
                 <h4>Homepage Template</h4>
                 <p>
-                    Generated from <a href="https://github.com/m-niemeyer/m-niemeyer.github.io" target="_blank">here</a>. <br> Thanks to Michael Niemeyer :)
+                    Generated from <a href="https://github.com/m-niemeyer/m-niemeyer.github.io" target="_blank">here</a>. Thanks to Michael Niemeyer :)
                 </p>
             </div>
     """
@@ -141,8 +141,12 @@ def get_talks_html():
 
 def get_services_html():
     services = """
-        <ul>
-            <li><b>Reviewer</b>: Shadow PC for <a href="https://conf.researchr.org/home/icse-2026" target="_blank">ICSE 2026</a></li>
+        <ul style="list-style-type: none; padding-left: 0;">
+            <li>
+                <span style="float: left;">Shadow PC Member</span>
+                <span style="float: right;"><a href="https://conf.researchr.org/home/icse-2026" target="_blank">ICSE 2026</a></span>
+                <div style="clear: both;"></div>
+            </li>
         </ul>
     """
     return services
