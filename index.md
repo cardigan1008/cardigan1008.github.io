@@ -22,6 +22,8 @@ I'll be joining Chinese University of Hong Kong (CUHK) as a Ph.D. student in 202
 
 {% include_relative _includes/publications.md %}
 
-<!-- {% include_relative _includes/services.md %} -->
+{% include_relative _includes/services.md %}
+
+{% include_relative _includes/talks.md %}
 
 {% include_relative _includes/awards.md %}
