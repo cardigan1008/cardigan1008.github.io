@@ -11,9 +11,10 @@ def get_personal_data():
     linkedin = "yunbo-ni"
     bio_text = f"""
                 <p>
-                    I am a first-year PhD student at the Department of Computer Science and Engineering, The Chinese University of Hong Kong (CUHK). 
-                    Currently, I am working on software testing (probably with LLMs), esepcially compiler testing.
-                    As an undergraduate student, I studied Software Engineering at the <a href="https://www.nju.edu.cn/" target="_blank">Nanjing University </a>.
+                    I am a first-year PhD student at the <a href="https://www.cse.cuhk.edu.hk/" target="_blank">Department of Computer Science and Engineering<a>, <a href="https://www.cuhk.edu.hk/" target="_blank">The Chinese University of Hong Kong (CUHK)</a>. 
+                    These days, I spend most of my time thinking about how to break compilers (on purpose), especially using large language models as part of the testing process. 
+                    I'm also curious about how LLMs understand and generate code — and what that means for future tools built on top of them. 
+                    As an undergraduate student, I studied Software Engineering at the <a href="https://www.nju.edu.cn/" target="_blank">Nanjing University</a>.
                 </p>
                 <p>For any inquiries, feel free to reach out to me via mail!</p>
                 <p>
@@ -138,10 +139,19 @@ def get_talks_html():
         s+= get_talk_entry(k, bib_data.entries[k])
     return s
 
+def get_services_html():
+    services = """
+        <ul>
+            <li><b>Reviewer</b>: Shadow PC for <a href="https://conf.researchr.org/home/icse-2026" target="_blank">ICSE 2026</a></li>
+        </ul>
+    """
+    return services
+
 def get_index_html():
     pub = get_publications_html()
     talks = get_talks_html()
     name, bio_text, footer = get_personal_data()
+    services = get_services_html()
     s = f"""
     <!doctype html>
 <html lang="en">
@@ -187,6 +197,12 @@ def get_index_html():
                     <div class="col-sm-12" style="">
                         <h4>Talks</h4>
                         {talks}
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 3em;">
+                    <div class="col-sm-12" style="">
+                        <h4>Services</h4>
+                        {services}
                     </div>
                 </div>
                 <div class="row" style="margin-top: 3em; margin-bottom: 1em;">
