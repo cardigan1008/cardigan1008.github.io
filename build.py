@@ -12,6 +12,7 @@ def get_personal_data():
     bio_text = f"""
                 <p>
                     I am a first-year PhD student at the <a href="https://www.cse.cuhk.edu.hk/" target="_blank">Department of Computer Science and Engineering<a>, <a href="https://www.cuhk.edu.hk/" target="_blank">The Chinese University of Hong Kong (CUHK)</a>. 
+                    I am fortunate to be advised by Prof. <a href="https://shao-hua-li.github.io/" target="_blank">Shaohua Li</a>.
                     These days, I spend most of my time thinking about how to break compilers (on purpose), especially using large language models as part of the testing process. 
                     I'm also curious about how LLMs understand and generate code — and what that means for future tools built on top of them. 
                     As an undergraduate student, I studied Software Engineering at the <a href="https://www.nju.edu.cn/" target="_blank">Nanjing University</a>.
